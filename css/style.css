@@ -13,6 +13,16 @@ body {
     src: url("../font/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: light-Reboto;
+    src: url("../font/Roboto-Light.ttf");
+}
+
+p {
+    font-family: regular-Reboto;
+    color: #f0f8ff;
+}
+
 h2 {
     font-family: regular-Reboto;
     color: #f0f8ff;
@@ -31,6 +41,13 @@ h1 {
     justify-content: space-between;
     z-index: 1000;
     margin: 0;
+    
+}
+.nav_header h2{
+    font-family: regular-Rebot;
+    color: #f0f8ff;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 .nav_header nav {
@@ -92,17 +109,23 @@ li {
     margin-left: 30px;
 
 }
+description_container h2{
+    font-family: regular-Rebot;
+    color: #f0f8ff;
+    font-weight: 900;
+    font-size: 35px;
+}
 
 .description_container button {
     font-family: regular-Reboto;
     border-radius: 3px;
     border: none;
-    color: rgb(255, 255, 255);
+    color: black;
     padding: 10px 25px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    background-color: transparent;
+    background-color: #f0f8ff;
     border: 2px solid #f0f8ff;
     outline: none;
 }
@@ -202,3 +225,201 @@ select {
 }
 
 .media_container {}
+
+/* aboutSection */
+.about_body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1f24;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header_container {
+    flex: 0 1 auto
+}
+
+.about_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 50px;
+    flex: 1 1 auto;
+}
+
+.role_description {
+    flex: 1;
+}
+.role_description h2{
+    font-family: regular-Reboto;
+    color: #f0f8ff;
+    font-size: 30px;
+    font-weight: 200px;
+}
+
+.description_about {
+    flex: 1.5;
+    padding: 30px;
+}
+
+.description_about button {
+    font-family: regular-Reboto;
+    background-color: f0f8ff;
+    border-radius: 3px;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #f0f8ff;
+    outline: none;
+
+}
+
+.about_nav {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000;
+    margin: 0;
+    height: 100%;
+}
+
+.about_nav nav {
+    margin-right: 30px;
+}
+
+.about_nav li {
+    color: #f0f8ff;
+    padding: 10px;
+
+}
+
+.about_nav a {
+    border-radius: 3px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 2px;
+    background-color: #342f27;
+    border: 2px solid #f0f8ff;
+    outline: none;
+}
+
+/* PortfolioSection */
+
+.figure-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 75vw;
+    margin: 20px auto;
+
+}
+
+figure {
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+
+
+}
+
+figure img {
+    width: 100%;
+    height: 300px;
+}
+
+.figure-gallery img {
+    width: 100%;
+    padding: 0%;
+    position: relative;
+    box-sizing: border-box;
+    z-index: -1;
+    /* box-shadow: 0px 0px 3px #ffffff;
+    border: 3px solid #ffffff; */
+}
+
+figcaption {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    z-index: 1;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 6px;
+}
+
+/* ServiceSection */
+.service_body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1f24;
+    height: 100vh;
+    width: 100vw;
+}
+
+.service_header {
+    flex: 0 1 auto;
+
+}
+
+.service_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.do_container {
+    margin-bottom: 15%;
+    text-align: center;
+    width: 25%;
+    flex: 1 1 auto;
+}
+
+.service_container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-right: 30px;
+}
+
+.service_description {
+    display: flex;
+    flex-direction: row;
+}
+
+.service_description div {
+
+    padding: 0 60px 0px 0px;
+}
+
+.see_work {
+    text-align: right;
+    margin-right: 60px;
+}
+
+.see_work hr {
+    border-radius: 2px;
+    height: 3px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.see_work button {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 50px 10px 50px;
+    border-radius: 4px;
+
+    font-family: regular-Reboto;
+    font-size: 20px;
+}
