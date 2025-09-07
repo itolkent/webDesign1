@@ -41,9 +41,10 @@ h1 {
     justify-content: space-between;
     z-index: 1000;
     margin: 0;
-    
+
 }
-.nav_header h2{
+
+.nav_header h2 {
     font-family: regular-Rebot;
     color: #f0f8ff;
     font-weight: 900;
@@ -109,7 +110,8 @@ li {
     margin-left: 30px;
 
 }
-description_container h2{
+
+description_container h2 {
     font-family: regular-Rebot;
     color: #f0f8ff;
     font-weight: 900;
@@ -224,7 +226,11 @@ select {
     width: 100%;
 }
 
-.media_container {}
+.media_button {
+    width: 100%;
+    text-align: right;
+    margin-left: 60px;
+}
 
 /* aboutSection */
 .about_body {
@@ -252,7 +258,8 @@ select {
 .role_description {
     flex: 1;
 }
-.role_description h2{
+
+.role_description h2 {
     font-family: regular-Reboto;
     color: #f0f8ff;
     font-size: 30px;
@@ -422,4 +429,14 @@ figcaption {
 
     font-family: regular-Reboto;
     font-size: 20px;
+}
+
+.social-media-icon i {
+    text-align: center;
+    width: 20px;
+    color: black;
+    font-size: 25px;
+    background-color: #f0f8ff;
+    padding: 7px;
+    border-radius: 5px;
 }
